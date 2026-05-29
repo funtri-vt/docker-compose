@@ -4,8 +4,8 @@ services:
     container_name: windowsxppro
     environment:
       VERSION: "xp"
-      USERNAME: "JohnD"
-      PASSWORD: "J0hnD0e12#$+-"
+      USERNAME: "JaneD"
+      PASSWORD: "J@neD0e12#$+-"
     devices:
       - /dev/kvm
       - /dev/net/tun
