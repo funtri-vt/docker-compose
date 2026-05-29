@@ -4,8 +4,8 @@ services:
     container_name: windows7ultimate
     environment:
       VERSION: "7u"
-      USERNAME: "JohnD"
-      PASSWORD: "J0hnD0e12#$+-"
+      USERNAME: "JaneD"
+      PASSWORD: "J@neD0e12#$+-"
     devices:
       - /dev/kvm
       - /dev/net/tun
