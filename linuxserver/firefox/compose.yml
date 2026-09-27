@@ -7,7 +7,7 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     volumes:
-      - /path/to/firefox/config:/config
+      - ./config:/config
     ports:
       - 3000:3000
       - 3001:3001
