@@ -1,4 +1,3 @@
----
 services:
   firefox:
     image: lscr.io/linuxserver/firefox:latest
@@ -14,3 +13,9 @@ services:
       - 3001:3001
     shm_size: "4gb"
     restart: unless-stopped
+    networks:
+      - isolated_firefox
+
+networks:
+  isolated_firefox:
+    driver: bridge
