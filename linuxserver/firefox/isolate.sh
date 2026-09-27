@@ -1,5 +1,5 @@
 # 1. Automatically grab the bridge interface name
-BRIDGE="br-$(sudo docker network inspect isolated_firefox -f '{{.Id}}' | cut -c 1-12)"
+BRIDGE="br-$(sudo docker network inspect firefox_isolated_firefox -f '{{.Id}}' | cut -c 1-12)"
 
 # 2. Allow established connections
 sudo iptables -I DOCKER-USER -i "$BRIDGE" -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
