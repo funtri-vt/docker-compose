@@ -1,6 +1,7 @@
 services:
   firefox:
     image: lscr.io/linuxserver/firefox:latest
+    runtime: kata
     container_name: firefox
     environment:
       - PUID=1000
